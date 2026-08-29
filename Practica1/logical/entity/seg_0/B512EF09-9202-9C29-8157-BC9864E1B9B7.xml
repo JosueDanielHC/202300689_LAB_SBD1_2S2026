@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B512EF09-9202-9C29-8157-BC9864E1B9B7" name="DETALLE_EVALUACION">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:11:45 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_evaluacion" id="47051881-84ED-BDD4-B0C6-AADC206472DE">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:11:52 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_criterio" id="5FA76DB8-9513-BCA4-14BD-41117AE4DC40">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:12:00 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="puntuacion" id="FA797C25-F48E-A0EE-6230-A56BAFB9BED3">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:12:03 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_evaluacion1" id="336BD9EE-8380-423A-E7B1-1079F0CF8C26">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:16:37 UTC</createdTime>
+<generatorID>FD0B1D68-30D5-805A-1E42-CF7D27B9F2AA</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<referedAttribute>2E0A111E-5CBE-6D09-E3FA-D48F3D18E3C4</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_criterio1" id="F7A54BBC-F5BC-B8CB-30A6-2BDE7722A611">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:16:49 UTC</createdTime>
+<generatorID>A1B6B13F-96FF-6020-8612-7219E43065FD</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<referedAttribute>B3A76235-57C2-D80C-0FD5-E463623838F1</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E4894D53-8395-3569-E57C-E410283E04E5" name="DETALLE_EVALUACION PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:11:54 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>47051881-84ED-BDD4-B0C6-AADC206472DE</attributeRef>
+<attributeRef>5FA76DB8-9513-BCA4-14BD-41117AE4DC40</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

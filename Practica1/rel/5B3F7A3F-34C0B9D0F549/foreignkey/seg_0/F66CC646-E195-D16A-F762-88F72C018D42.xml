@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F66CC646-E195-D16A-F762-88F72C018D42" containerWithKeyObject="5A9102D6-1A2A-08D8-2166-816BA29A81E7" localFKIndex="FCC604F5-8E5C-407F-C20B-12BA40927D2A" name="COLOCACION_PLAZA_PRACTICA_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>B9B27D24-C3C0-C53C-F295-B9E00C8D6C53</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<referredTableLongName>PLAZA_PRACTICA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9BCE8BF7-C018-72BD-3D8C-495FA2B5291F</referredTableID>
+<keyObject>C74D086B-77F0-BAC7-EF40-54B05D50A6A7</keyObject>
+<referredKeyID>C74D086B-77F0-BAC7-EF40-54B05D50A6A7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_plaza</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

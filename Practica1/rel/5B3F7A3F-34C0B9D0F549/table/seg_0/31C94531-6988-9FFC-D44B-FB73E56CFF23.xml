@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="31C94531-6988-9FFC-D44B-FB73E56CFF23" name="EMPRESA">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>23ABC828-93C4-DF19-E833-9C2C71B248F9</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_empresa" id="B07D9C1F-08E0-C1B3-3F56-9AA32BCAD425">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>567E8DBF-0872-4F5C-98E7-F6A0E0ED9201</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="2B77D82B-156F-4A5A-0DBD-3E15EBD50D14">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>1AA5821D-2C87-DAE0-932D-9883330E5D35</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="2EB4E749-CA9D-E2D1-EDA2-E822B796D494">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>EBB12FCC-74F7-13F7-41D3-AC96B9C82D3D</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sector_economico" id="F2F92031-1DB4-C6C9-271C-0CD0726D8901">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>20476EF7-543A-9E4B-F5B1-ECE9F5790F7B</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2538ACDF-51C2-0A6C-BA85-0609F471BA4D" name="EMPRESA_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>E1E1E1D6-F3AB-DA69-A0B1-5ABEF0C10E9B</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B07D9C1F-08E0-C1B3-3F56-9AA32BCAD425"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

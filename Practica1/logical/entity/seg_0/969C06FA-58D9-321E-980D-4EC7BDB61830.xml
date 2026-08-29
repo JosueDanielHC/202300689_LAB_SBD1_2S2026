@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="969C06FA-58D9-321E-980D-4EC7BDB61830" name="EVALUACION">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:10:50 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_evaluacion" id="2E0A111E-5CBE-6D09-E3FA-D48F3D18E3C4">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:11:06 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="9FC2DEBC-6490-FBBD-0524-BDC8DAB2CF98">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:11:12 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_colocacion" id="90213933-1F24-CBD5-7407-7521208531C9">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:16:28 UTC</createdTime>
+<generatorID>075CD978-2719-ACAD-8E07-0DAC3A27F7C1</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<referedAttribute>0384FFE8-E053-5DCD-FA45-F8966CD7855D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E2944AD9-B584-BF95-083E-E5827779B511" name="EVALUACION PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:11:08 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2E0A111E-5CBE-6D09-E3FA-D48F3D18E3C4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

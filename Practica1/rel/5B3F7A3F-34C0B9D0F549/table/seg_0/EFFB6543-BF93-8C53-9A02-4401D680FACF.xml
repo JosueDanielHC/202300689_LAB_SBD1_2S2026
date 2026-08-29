@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EFFB6543-BF93-8C53-9A02-4401D680FACF" name="EVALUACION">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>969C06FA-58D9-321E-980D-4EC7BDB61830</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_evaluacion" id="10AC7331-F93F-5C08-A39C-CAB77F70D11F">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>2E0A111E-5CBE-6D09-E3FA-D48F3D18E3C4</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="03D5AB8D-82E1-F2A8-D1CE-2664A1673A25">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>9FC2DEBC-6490-FBBD-0524-BDC8DAB2CF98</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLOCACION_id_colocacion" id="74D70D8A-CDFE-C6F6-A9BF-71E855CE93EC">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>90213933-1F24-CBD5-7407-7521208531C9</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C15FE68F-E363-4051-D3E8-5DB14410C6AE" referredColumn="9AD36FC1-DC06-F39B-6595-89168713A010"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC4AD6B1-A0DE-66C5-C1DC-98D7EC2D378A" name="EVALUACION_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>E2944AD9-B584-BF95-083E-E5827779B511</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10AC7331-F93F-5C08-A39C-CAB77F70D11F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A23B589-B47C-F815-0318-B19EA41060AB" name="EVALUACION_COLOCACION_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>075CD978-2719-ACAD-8E07-0DAC3A27F7C1</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74D70D8A-CDFE-C6F6-A9BF-71E855CE93EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

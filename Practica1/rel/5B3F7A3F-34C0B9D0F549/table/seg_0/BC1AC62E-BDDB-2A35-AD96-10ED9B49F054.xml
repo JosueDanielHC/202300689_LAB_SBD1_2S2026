@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC1AC62E-BDDB-2A35-AD96-10ED9B49F054" name="BITACORA">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>A9681CCE-358F-0170-D720-DAC56247D072</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_bitacora" id="EB3B0E54-B263-F756-4C8F-02FBA1972BF0">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>670DE50B-5404-6BCB-823A-DD3985A3BB07</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correlativo" id="26FE5CE4-DF59-7B2F-C6B4-6934311759E9">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>39CBFB4A-E7EB-B669-B4E0-A6A866C07332</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="A9F38CE9-C416-8C2A-A74C-BD5E0B33F7BA">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>CAFB828B-2B75-B1D8-9C10-469162B4EF66</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horas_trabajadas" id="A95AC715-EB16-C96F-87B8-D954F57E2E1D">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>CB921B6C-F68C-9EB4-ADD8-AF47C2015844</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="actividades_realizadas" id="CF347F3E-F93F-17FE-5FDF-3B3A9639882B">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>65FBA8D8-5579-E691-8D03-056B185E4497</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observaciones" id="60BB0C1E-C876-6B45-03FB-9FD2B1E767CF">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>FCC52BF3-B7A2-D13A-40FE-5139B0E9387D</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLOCACION_id_colocacion" id="F90D33F2-4651-6ABE-201D-3C1ECB0A93D1">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>97934752-9D26-82E9-8340-5031106A2989</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A65D32BF-9010-4B31-1134-093C9DF92BB3" referredColumn="9AD36FC1-DC06-F39B-6595-89168713A010"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F68741CA-3FB8-8519-CB12-C883F0AE7EF4" name="BITACORA_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>E844E899-2B3D-D524-E529-A6D5A4B3E391</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB3B0E54-B263-F756-4C8F-02FBA1972BF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A963C46-9E32-596B-90E5-43AE4E2D238C" name="BITACORA_COLOCACION_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>6D36B0DD-321A-8357-28FF-AC0E6DF627EE</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F90D33F2-4651-6ABE-201D-3C1ECB0A93D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

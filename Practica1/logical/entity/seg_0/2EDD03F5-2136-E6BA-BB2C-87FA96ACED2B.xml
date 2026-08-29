@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2EDD03F5-2136-E6BA-BB2C-87FA96ACED2B" name="CRITERIO_EVALUACION">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:11:19 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_criterio" id="B3A76235-57C2-D80C-0FD5-E463623838F1">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:11:24 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_criterio" id="C7ED3768-B32A-17EF-AF43-717ECAFEAF4A">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:11:29 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F6E5BB5B-389B-22BF-32D6-AD0C66BBC7AE" name="CRITERIO_EVALUACION PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:11:28 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B3A76235-57C2-D80C-0FD5-E463623838F1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

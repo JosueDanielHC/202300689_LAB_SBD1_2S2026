@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="48A1C140-4DC7-B6B0-D06A-2F725E2F4DAF" name="CRITERIO_EVALUACION">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>2EDD03F5-2136-E6BA-BB2C-87FA96ACED2B</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_criterio" id="BF82A802-09ED-4BB4-A54B-B51D28DE4586">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>B3A76235-57C2-D80C-0FD5-E463623838F1</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_criterio" id="F39D7CDC-0498-C223-3858-0FB616D8F820">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>C7ED3768-B32A-17EF-AF43-717ECAFEAF4A</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="58935658-09F0-B1B3-DE81-B8D4717B541F" name="CRITERIO_EVALUACION_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>F6E5BB5B-389B-22BF-32D6-AD0C66BBC7AE</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF82A802-09ED-4BB4-A54B-B51D28DE4586"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

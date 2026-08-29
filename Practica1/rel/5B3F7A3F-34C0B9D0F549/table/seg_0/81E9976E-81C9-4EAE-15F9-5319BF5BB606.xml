@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="81E9976E-81C9-4EAE-15F9-5319BF5BB606" name="CONTACTO_EMPRESARIAL">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>C8DA4028-B73C-CF20-8387-5B54025C4CAC</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_contacto" id="1524B141-2EA7-B7E5-621D-0EB163D499C6">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>57EA3523-9021-D039-C013-04DBDF8AE8C4</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="3B6D5997-8E93-D5A5-6ECF-E7D839071F85">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>56F725FE-9664-5B70-5BFF-6142C0086B84</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="87BDD128-F899-0D96-27E9-D053BF3BE561">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>C58042BA-7965-C1D2-4A3A-68B8BD6E3EAF</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="213B2556-C17E-EF9C-5251-2A7442353BB8">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>A9011FA0-3010-B22F-BCEF-F344D37053F0</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPRESA_id_empresa" id="215EF801-5398-660E-C544-F8386042291D">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>B23948F7-9AFD-9066-BC63-003A37E26142</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B25C830-814B-C745-EA77-2EAC867A2F0A" referredColumn="B07D9C1F-08E0-C1B3-3F56-9AA32BCAD425"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B4E433E8-0F0C-26CF-A958-11126D0C10F2" name="CONTACTO_EMPRESARIAL_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>713D961C-84B0-2F4B-9037-EC4D48273980</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1524B141-2EA7-B7E5-621D-0EB163D499C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="966667DC-7947-9966-9379-19BC275FE61D" name="CONTACTO_EMPRESARIAL_EMPRESA_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>9A838C1E-6AF4-CB05-92C6-282869D404AB</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="215EF801-5398-660E-C544-F8386042291D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

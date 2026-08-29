@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4EAB97EB-62C4-073F-52B2-95BFDD591DF1" containerWithKeyObject="5A9102D6-1A2A-08D8-2166-816BA29A81E7" localFKIndex="E4484A49-7B4D-2CEC-3439-91C1D4AD212D" name="COLOCACION_CATEDRATICO_SUPERVISOR_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>364DFBD3-2971-6FEE-15D8-A64B3435CB01</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<referredTableLongName>CATEDRATICO_SUPERVISOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AEF172A3-A33F-D8A2-CFC8-E99A1684B938</referredTableID>
+<keyObject>3821F715-BEC3-2835-7893-E21B41818C03</keyObject>
+<referredKeyID>3821F715-BEC3-2835-7893-E21B41818C03</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_catedratico</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

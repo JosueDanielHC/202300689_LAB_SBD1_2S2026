@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9BCE8BF7-C018-72BD-3D8C-495FA2B5291F" name="PLAZA_PRACTICA">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>3FA2234D-A179-67D6-50D3-A14D4701796D</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_plaza" id="A24EC50E-EE65-931A-9760-634EFF6F4131">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>3F005714-BA69-E57A-2D0B-A74F3FB765D7</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="especialidad_tecnica" id="F911BD28-8744-92BB-6D58-FF1CE7EBCEBE">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>7ED6881F-5C50-3B8B-D60D-630102BA51F5</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPRESA_id_empresa" id="8654B589-51FD-7C50-9DAD-0C3DEBBA1BC1">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>4792D3D9-ED1B-77FF-F4FA-3D3A60CC5493</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="343829C8-ED49-948B-A3C0-37E89605C8B0" referredColumn="B07D9C1F-08E0-C1B3-3F56-9AA32BCAD425"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C74D086B-77F0-BAC7-EF40-54B05D50A6A7" name="PLAZA_PRACTICA_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>72497023-8F57-C235-B353-17E98EF42255</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A24EC50E-EE65-931A-9760-634EFF6F4131"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F60BF2B-B1A2-A614-F136-A22673B4B7E1" name="PLAZA_PRACTICA_EMPRESA_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>32570159-AA69-E58D-0F80-1D5F5AA7A126</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8654B589-51FD-7C50-9DAD-0C3DEBBA1BC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

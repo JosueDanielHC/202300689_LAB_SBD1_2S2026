@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="011822DC-A859-E182-C453-E4ED05654C62" name="ESTUDIANTE">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:07:23 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="carne" id="A2B4A405-80BA-D9D5-9080-2245D893AB01">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:07:32 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_completo" id="E01077C2-20EC-66C6-C4E6-B8BB237BFE92">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:07:39 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="carrera_tecnica" id="E9526EF6-4FCF-602F-A651-9526DD83D7E3">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:07:47 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="51856D80-07B4-2B05-4CFB-9D523628F87D">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:07:53 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="241B230D-6870-5A03-1110-19192D3E0479">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:08:00 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_nacimiento" id="65866766-61C5-946F-4387-464F875FA6C5">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:08:08 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="genero" id="4D43A9D8-DBE1-CE15-990C-7C47AACEF702">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:08:11 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="departamento" id="F9004AD5-C741-B2DB-6861-D310DE7A9E54">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:08:17 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="municipio_residencia" id="2CB4A17B-EB40-8D31-5426-3A2134AB6181">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:08:25 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="primera_practica_repitencia" id="E47CEBC7-867E-2876-0FE4-1CFE4AD00147">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:08:33 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_instituto" id="11B57C23-0940-2EBD-E8A4-F9AECC338A53">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:15:16 UTC</createdTime>
+<generatorID>9EE8DF55-B78D-EF91-E194-B19C467B2594</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<referedAttribute>D24FA827-0ABB-A174-4D64-A8E16F47E3D4</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DFA59969-4F2B-7894-AAC5-DD3401CEB001" name="ESTUDIANTE PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:07:38 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A2B4A405-80BA-D9D5-9080-2245D893AB01</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

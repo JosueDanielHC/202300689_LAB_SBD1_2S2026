@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C8DA4028-B73C-CF20-8387-5B54025C4CAC" name="CONTACTO_EMPRESARIAL">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:02:25 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_contacto" id="57EA3523-9021-D039-C013-04DBDF8AE8C4">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:02:39 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="56F725FE-9664-5B70-5BFF-6142C0086B84">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:02:49 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="C58042BA-7965-C1D2-4A3A-68B8BD6E3EAF">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:02:56 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo" id="A9011FA0-3010-B22F-BCEF-F344D37053F0">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:03:04 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_empresa" id="B23948F7-9AFD-9066-BC63-003A37E26142">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:13:52 UTC</createdTime>
+<generatorID>9A838C1E-6AF4-CB05-92C6-282869D404AB</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<referedAttribute>567E8DBF-0872-4F5C-98E7-F6A0E0ED9201</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="713D961C-84B0-2F4B-9037-EC4D48273980" name="CONTACTO_EMPRESARIAL PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:02:44 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>57EA3523-9021-D039-C013-04DBDF8AE8C4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

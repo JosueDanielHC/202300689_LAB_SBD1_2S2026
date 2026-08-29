@@ -1,0 +1,8 @@
+﻿CARNE,NOMBRE_COMPLETO,CARRERA_TECNICA,DIRECCION,TELEFONO,FECHA_NACIMIENTO,GENERO,ES_REPITENCIA,ID_MUNICIPIO,ID_INSTITUTO
+2024001,Diego López,Perito en Computación,Zona 5 Guatemala,33331111,2005-04-12,M,0,1,1
+2024002,María Aguilar,Perito en Electrónica,Colonia El Milagro Mixco,33332222,2006-08-25,F,0,3,2
+2024003,Pedro Samayoa,Perito en Computación,Zona 4 Villa Nueva,33333333,2005-11-03,M,1,2,1
+2024004,Sara Pinzón,Perito Contador,Zona 10 Guatemala,33334444,2006-01-15,F,0,1,1
+2024005,Fernando Cruz,Perito en Mecánica,Zona 1 Palín,33335555,2005-09-10,M,0,7,3
+2024006,Gabriela Soto,Perito en Computación,Zona 15 Guatemala,33336666,2006-03-22,F,0,1,1
+2024007,Andrés Barrios,Perito en Computación,Residenciales San José,33337777,2005-12-05,M,0,2,1

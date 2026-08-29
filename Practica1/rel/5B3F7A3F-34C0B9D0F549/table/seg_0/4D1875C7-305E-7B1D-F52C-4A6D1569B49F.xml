@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D1875C7-305E-7B1D-F52C-4A6D1569B49F" name="DETALLE_EVALUACION">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>B512EF09-9202-9C29-8157-BC9864E1B9B7</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_evaluacion" id="9C8E3994-A4D8-7805-0167-0BC5293438E1">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>47051881-84ED-BDD4-B0C6-AADC206472DE</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_criterio" id="F99A10B3-CA7B-B8E0-FE8C-F2284B7326C0">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>5FA76DB8-9513-BCA4-14BD-41117AE4DC40</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="puntuacion" id="2A9B34CF-944C-784D-A6C3-0533F7B38C26">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>FA797C25-F48E-A0EE-6230-A56BAFB9BED3</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVALUACION_id_evaluacion" id="05364A4B-4ABE-B610-8E4F-D0D957F85CD0">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>336BD9EE-8380-423A-E7B1-1079F0CF8C26</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EA65854-64CC-4FB9-65DF-AECE56D5420E" referredColumn="10AC7331-F93F-5C08-A39C-CAB77F70D11F"/>
+</associations>
+</Column>
+<Column name="CRITERIO_EVALUACION_id_criterio" id="16C1F2C3-9358-9C7D-9083-51B10CFD4782">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>F7A54BBC-F5BC-B8CB-30A6-2BDE7722A611</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CAE67896-702A-6545-CD42-7FCB22B609C8" referredColumn="BF82A802-09ED-4BB4-A54B-B51D28DE4586"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B285E43-5019-4DCB-7477-5387506EE899" name="DETALLE_EVALUACION_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>E4894D53-8395-3569-E57C-E410283E04E5</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C8E3994-A4D8-7805-0167-0BC5293438E1"/>
+<colUsage columnID="F99A10B3-CA7B-B8E0-FE8C-F2284B7326C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59504C6F-7EE4-6150-A58B-A0CEE56CED60" name="DETALLE_EVALUACION_CRITERIO_EVALUACION_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>A1B6B13F-96FF-6020-8612-7219E43065FD</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16C1F2C3-9358-9C7D-9083-51B10CFD4782"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C899931D-2E80-FEB4-FD32-2E6BE911828F" name="DETALLE_EVALUACION_EVALUACION_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>FD0B1D68-30D5-805A-1E42-CF7D27B9F2AA</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05364A4B-4ABE-B610-8E4F-D0D957F85CD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A9102D6-1A2A-08D8-2166-816BA29A81E7" name="COLOCACION">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>55F73F66-8B8B-4903-2241-CA827B04D6A4</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_colocacion" id="9AD36FC1-DC06-F39B-6595-89168713A010">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>0384FFE8-E053-5DCD-FA45-F8966CD7855D</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_inicio" id="F3CD3E9A-33D6-52B8-5978-C1C33AFE2AF2">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>BD3D0C24-FC93-D3B1-DB1B-660DF0FCEB50</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_finalizacion" id="CA3C4D96-1164-933A-72AD-D59C3D1C8426">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>7955A1F0-33EE-37E2-659F-C09EDE26A9C0</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="49D5DD9C-DE78-6DBA-EAD0-70B5B1DA52B3">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>75FB3AD4-AFD6-7957-87E4-95B77BA72A6C</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLAZA_PRACTICA_id_plaza" id="61017206-5AA6-E480-ECF9-4BE04DE95648">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>11AAA160-6B18-F1FE-51BB-A7DA828D1C69</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F66CC646-E195-D16A-F762-88F72C018D42" referredColumn="A24EC50E-EE65-931A-9760-634EFF6F4131"/>
+</associations>
+</Column>
+<Column name="ESTUDIANTE_carne" id="006EE88E-60C3-BDDE-116F-7A001406DB84">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>5AEAD69E-3EE1-71DC-654B-770333F540F8</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65DC3027-63BB-083D-AA93-D76C6C0EFB06" referredColumn="E40AB265-5881-FB7B-D594-273ED728A6FC"/>
+</associations>
+</Column>
+<Column name="CATEDRATICO_SUPERVISOR_id_catedratico" id="5AC2AE67-7209-EF8A-7269-F8391C304E83">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>5A310F20-45B1-E7C9-2F33-C15F6459DF05</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4EAB97EB-62C4-073F-52B2-95BFDD591DF1" referredColumn="61A2D95B-1B68-67C8-A330-2EA5B22E9E85"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0866BE38-B0FD-2A98-BC09-72FE2B86214F" name="COLOCACION_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>7BF1EA02-5650-9D4B-83D6-33AB0B53FAFE</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AD36FC1-DC06-F39B-6595-89168713A010"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCC604F5-8E5C-407F-C20B-12BA40927D2A" name="COLOCACION_PLAZA_PRACTICA_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>B9B27D24-C3C0-C53C-F295-B9E00C8D6C53</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61017206-5AA6-E480-ECF9-4BE04DE95648"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6805F07B-07C1-B769-8458-B8E20295F9CD" name="COLOCACION_ESTUDIANTE_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>0307711F-0302-0A77-8F7E-F4F6BB8AB3A0</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="006EE88E-60C3-BDDE-116F-7A001406DB84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4484A49-7B4D-2CEC-3439-91C1D4AD212D" name="COLOCACION_CATEDRATICO_SUPERVISOR_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:21:15 UTC</createdTime>
+<generatorID>364DFBD3-2971-6FEE-15D8-A64B3435CB01</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AC2AE67-7209-EF8A-7269-F8391C304E83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

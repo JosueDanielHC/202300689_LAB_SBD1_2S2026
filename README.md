@@ -1,0 +1,26 @@
+﻿# 202300689_LAB_SBD1_2S2026
+
+Laboratorio de **Sistemas de Bases de Datos 1** — Segundo Semestre 2026  
+Universidad de San Carlos de Guatemala
+
+| Dato | Valor |
+|---|---|
+| **Estudiante** | Josue Daniel Herrera Cottom |
+| **Carné** | 202300689 |
+| **Curso** | Bases de Datos 1 (SBD1) |
+
+## Contenido
+
+### `Practica1/`
+Modelo conceptual, lógico, relacional, diccionario de datos y DDL Oracle del sistema EPS.
+
+Entrega: `[BD1]_Practica1_202300689.zip`
+
+### `Practica2/`
+Importación del dataset, consultas DQL avanzadas y manual de procedimiento.
+
+Entrega: `[BD1]_Practica2_202300689.zip`
+
+## Herramientas
+- Oracle Database 21c XE
+- Oracle SQL Developer

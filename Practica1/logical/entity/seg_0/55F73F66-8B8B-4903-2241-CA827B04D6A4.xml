@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="55F73F66-8B8B-4903-2241-CA827B04D6A4" name="COLOCACION">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:08:55 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_colocacion" id="0384FFE8-E053-5DCD-FA45-F8966CD7855D">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:09:03 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_inicio" id="BD3D0C24-FC93-D3B1-DB1B-660DF0FCEB50">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:09:08 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_finalizacion" id="7955A1F0-33EE-37E2-659F-C09EDE26A9C0">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:09:17 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="75FB3AD4-AFD6-7957-87E4-95B77BA72A6C">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:09:24 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_plaza" id="11AAA160-6B18-F1FE-51BB-A7DA828D1C69">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:15:42 UTC</createdTime>
+<generatorID>B9B27D24-C3C0-C53C-F295-B9E00C8D6C53</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<referedAttribute>3F005714-BA69-E57A-2D0B-A74F3FB765D7</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="carne" id="5AEAD69E-3EE1-71DC-654B-770333F540F8">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:15:56 UTC</createdTime>
+<generatorID>0307711F-0302-0A77-8F7E-F4F6BB8AB3A0</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<referedAttribute>A2B4A405-80BA-D9D5-9080-2245D893AB01</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_catedratico" id="5A310F20-45B1-E7C9-2F33-C15F6459DF05">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:16:11 UTC</createdTime>
+<generatorID>364DFBD3-2971-6FEE-15D8-A64B3435CB01</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<referedAttribute>9F2032F3-6378-4F65-99E6-331C739686FC</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7BF1EA02-5650-9D4B-83D6-33AB0B53FAFE" name="COLOCACION PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:09:07 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0384FFE8-E053-5DCD-FA45-F8966CD7855D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

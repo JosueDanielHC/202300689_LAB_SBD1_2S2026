@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3FA2234D-A179-67D6-50D3-A14D4701796D" name="PLAZA_PRACTICA">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:04:39 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_plaza" id="3F005714-BA69-E57A-2D0B-A74F3FB765D7">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:04:49 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="especialidad_tecnica" id="7ED6881F-5C50-3B8B-D60D-630102BA51F5">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:04:51 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_empresa" id="4792D3D9-ED1B-77FF-F4FA-3D3A60CC5493">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:14:59 UTC</createdTime>
+<generatorID>32570159-AA69-E58D-0F80-1D5F5AA7A126</generatorID>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<referedAttribute>567E8DBF-0872-4F5C-98E7-F6A0E0ED9201</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="72497023-8F57-C235-B353-17E98EF42255" name="PLAZA_PRACTICA PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:04:50 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3F005714-BA69-E57A-2D0B-A74F3FB765D7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

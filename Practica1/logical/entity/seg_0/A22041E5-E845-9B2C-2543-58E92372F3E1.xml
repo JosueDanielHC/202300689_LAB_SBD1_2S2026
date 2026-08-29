@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A22041E5-E845-9B2C-2543-58E92372F3E1" name="CATEDRATICO_SUPERVISOR">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:06:23 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_catedratico" id="9F2032F3-6378-4F65-99E6-331C739686FC">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:06:34 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="3D3DDE69-4F59-8DE4-DD04-354F5518346C">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:06:40 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="identificacion" id="BED44F2F-0B0B-2E48-A138-6D453E27039D">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:06:48 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="43CBAB32-DCC0-5FAD-AFF3-40DE93F7DAD5">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:06:57 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="especialidad_que_supervisa" id="3C5BC3C6-791F-26FB-6013-23EC661FA44A">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:07:06 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F5E0EEB0-C490-C61C-B4F4-FD40E8224B96" name="CATEDRATICO_SUPERVISOR PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-08-11 19:06:38 UTC</createdTime>
+<ownerDesignName>Practica1</ownerDesignName>
+<engineerTo>
+<item key="5B3F7A3F-A443-4025-9C48-34C0B9D0F549" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9F2032F3-6378-4F65-99E6-331C739686FC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

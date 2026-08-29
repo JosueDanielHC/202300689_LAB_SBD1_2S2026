@@ -1,0 +1,10 @@
+﻿ID_BITACORA,CORRELATIVO_MENSUAL,FECHA,HORAS_TRABAJADAS,ACTIVIDADES_REALIZADAS,OBSERVACIONES,ID_COLOCACION,ID_CONTACTO_VALIDADOR
+1,1,2026-07-01,8.0,Configuración de entorno de desarrollo para el proyecto web,Ninguna,1,1
+2,2,2026-07-02,8.0,Desarrollo de módulo de autenticación de usuarios,Se requirió apoyo en DB,1,1
+3,1,2026-07-15,6.0,Revisión y mantenimiento de tableros eléctricos zona B,,2,2
+4,2,2026-07-16,8.0,Cambio de fusibles de alta tensión,,2,2
+5,1,2026-08-01,8.0,Revisión de tractores y calibración de motores,Todo en orden,5,5
+6,2,2026-08-02,8.0,Cambio de aceite y filtros en maquinaria pesada,Faltó repuesto del filtro de aire,5,5
+7,1,2026-07-30,8.0,Limpieza de base de datos de clientes,Uso de scripts SQL,6,6
+8,2,2026-07-31,8.0,Creación de dashboard en PowerBI,Terminado con éxito,6,6
+9,1,2026-08-15,6.0,Inducción a la arquitectura del sistema y repositorios,,7,7
