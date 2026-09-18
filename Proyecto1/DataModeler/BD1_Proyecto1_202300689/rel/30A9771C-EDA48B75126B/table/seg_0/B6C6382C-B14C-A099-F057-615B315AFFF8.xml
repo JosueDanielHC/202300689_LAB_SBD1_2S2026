@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6C6382C-B14C-A099-F057-615B315AFFF8" name="metodo_pago">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>79142C39-9C86-1C16-19C0-3B70F1BA43C2</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_metodo_pago" id="67AF4327-C0B0-A7C0-ACF9-076B12A455D1">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>53BEC796-A7E6-4FF8-9DC1-4101CC7F6D1F</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_metodo_pago" id="171914E9-82DC-E1E0-8380-0984C772B381">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>43BD6253-9B21-4DA1-966D-3D17B51D4D95</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A4001E86-87FA-D95E-36E3-EB98BA4A6F9F" name="metodo_pago_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>D0668D0C-145F-4219-87DF-99E42EE2BDDE</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67AF4327-C0B0-A7C0-ACF9-076B12A455D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C15C154D-35E2-4876-B1E4-85DFF7187CD4" name="uk_metpag_nombre">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:40:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>false</pk>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="171914E9-82DC-E1E0-8380-0984C772B381"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

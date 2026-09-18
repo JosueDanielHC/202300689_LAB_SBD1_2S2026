@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D1000AE-DBB7-5C90-68A0-4725AB0C28B9" name="tipo_tienda">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>FEF1D0A5-BCFE-797F-7043-786FA3134BDA</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_tienda" id="37AEA9B4-87EC-72F8-8E8A-D82FDC5D8927">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>13086523-F31F-4351-8EB0-9CE08E5C1666</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_tipo_tienda" id="F356D063-E9D9-A447-C0DD-6812E0DBF841">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>09289BCB-77AB-4D17-BB02-0453AEF288B7</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A3C91EFB-0543-0F5D-25FF-155142103048" name="tipo_tienda_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>9D2C18CB-1A30-43AF-8547-48CC6EE4B313</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37AEA9B4-87EC-72F8-8E8A-D82FDC5D8927"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5D8807E-12CB-4514-813F-FCFCD8FD311C" name="uk_tipo_tienda_nom">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:40:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>false</pk>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F356D063-E9D9-A447-C0DD-6812E0DBF841"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

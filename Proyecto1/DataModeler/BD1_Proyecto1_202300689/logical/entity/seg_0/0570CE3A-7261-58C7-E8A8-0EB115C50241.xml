@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0570CE3A-7261-58C7-E8A8-0EB115C50241" name="municipio">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 06:54:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="id_municipio" directorySegmentName="seg_0" id="D9D1FC55-9328-4FF6-9A8A-2DBD0CEB58B5">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="nombre_municipio" directorySegmentName="seg_0" id="995D7815-F740-43B4-A398-1E5C5312C6D8">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" name="municipio PUID" directorySegmentName="seg_0" id="265D85CC-1A43-4C32-8A21-7EE52E54E80C">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D9D1FC55-9328-4FF6-9A8A-2DBD0CEB58B5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

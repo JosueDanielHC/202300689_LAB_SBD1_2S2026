@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B84614E-C662-D445-1ED7-BA26B53710EC" name="departamento">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>43362BFA-D097-1505-3773-6BB661CF5C89</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_departamento" id="83A5CE89-FDF9-CE1F-858C-B5DD2E0160A2">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>9F864E32-6916-4B18-8679-AD3C43BFEC59</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_departamento" id="B9794C76-AA5E-C7EB-4896-C9BE879B26E0">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>5AAD1708-0DCC-453F-8CA7-4B426F6D1B12</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pais" id="D3E5C84F-1C4B-4E75-5C80-4FC0987D21FB">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>7BA10BEA-19A8-04FD-3A9B-FCE3F4F156D7</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89E3FBBF-B226-B5CC-E842-CEDBB2CE885B" referredColumn="9BE1E41F-CDE4-3A9D-551C-6F8919E37A90"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="05AF38A4-D243-0A40-CA1B-92744DC714FA" name="departamento_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>CA9C0B80-7B6D-4A74-8310-F4228E0B7065</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83A5CE89-FDF9-CE1F-858C-B5DD2E0160A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57D19FDB-FC37-A1C7-0C3A-BFEEEECE3583" name="departamento_pais_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>3B64B99F-C040-259E-39E5-BB3FC7D497B4</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3E5C84F-1C4B-4E75-5C80-4FC0987D21FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46F7132F-5269-4698-986A-F8B4F3493B29" name="uk_dep_pais_nombre">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:40:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>false</pk>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3E5C84F-1C4B-4E75-5C80-4FC0987D21FB"/>
+<colUsage columnID="B9794C76-AA5E-C7EB-4896-C9BE879B26E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

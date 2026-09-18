@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F55F01D-827B-F8FF-8E35-CC0E79A46840" name="pago">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>7753776A-F366-BBB3-1B6F-C693FF50E1C4</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pago" id="F7AB3A6D-A76E-D7AC-3D5B-0303EBF67B4F">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>6A587CAC-F3C4-466F-884D-EF66A1437227</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto" id="CA1A697E-A126-1E0A-6D38-0F2B8EC1CD0B">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>50E9A120-6CAF-41B8-AE01-4C3A14947846</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_venta" id="F52FC594-E2D4-A224-B4EE-EF1BE05A8D87">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>108E7F42-B9B3-69C2-6078-0CBBFCFDBC47</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F41CE76-014E-963C-6464-862D715FE2A4" referredColumn="43A63069-7360-914B-E9D5-1A94F305A7FF"/>
+</associations>
+</Column>
+<Column name="id_metodo_pago" id="2D6859E8-2AAF-47CC-0EFE-01EF838CEDB9">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>238FF35A-85C4-B775-F112-51F7659FCFB1</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A384D4CC-7C91-F156-879E-E148AD578DB9" referredColumn="67AF4327-C0B0-A7C0-ACF9-076B12A455D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1F3F49E6-9BAE-14BE-472D-FD3926431706" name="pago_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>D56EBADA-BEB9-41A1-94CC-C171351495C0</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7AB3A6D-A76E-D7AC-3D5B-0303EBF67B4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="167DE41E-34CB-052F-1938-4DBDB529A3B7" name="pago_metodo_pago_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>E7443432-3674-8318-00E2-9E5903CDFC44</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D6859E8-2AAF-47CC-0EFE-01EF838CEDB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E3A5852-9518-326D-D8AF-70A6ACC51CD4" name="pago_venta_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>21E54B35-41F7-707E-9428-8F9BEF03E2D3</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F52FC594-E2D4-A224-B4EE-EF1BE05A8D87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints>
+<tableCheckConstraint class="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint" id="2D768474-F999-4DE5-A53C-C1F9D2152A6B" name="ck_pago_monto">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:40:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<rule><![CDATA[monto > 0]]></rule>
+<generateInDDL>YES</generateInDDL>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

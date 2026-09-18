@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D7C977F-FC05-0361-CED7-07C0529A5E91" name="tipo_identificacion">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>D0E9622E-6D61-E095-27A8-0201B4C4B1C1</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_identificacion" id="0E5D9619-55A0-D635-0528-DF37DB128386">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>9470B445-54A7-49C7-BEFC-4E6DCBB9123C</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_tipo_identificacion" id="0B589317-6CCB-1459-AD7D-F951E446F276">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>14F91F72-7F22-4F99-B424-A59079EA94E7</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B3A838F2-47AA-32E2-1547-4FC275F78D7F" name="tipo_identificacion_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>CC2591E3-A98F-4D69-9953-C970B4469035</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E5D9619-55A0-D635-0528-DF37DB128386"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C2C6D0A-EF42-477C-9F5E-985D9862F1A9" name="uk_tipide_nombre">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:40:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>false</pk>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B589317-6CCB-1459-AD7D-F951E446F276"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

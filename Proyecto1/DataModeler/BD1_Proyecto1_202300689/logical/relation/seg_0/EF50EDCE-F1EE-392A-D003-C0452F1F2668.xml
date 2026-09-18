@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="marca_producto" directorySegmentName="seg_0" id="EF50EDCE-F1EE-392A-D003-C0452F1F2668">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 07:16:26 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FD426666-0BFE-FE5A-6631-669F86B74964</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6F68CA88-1C7E-CC3B-697A-2AF8FBCE5AC3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

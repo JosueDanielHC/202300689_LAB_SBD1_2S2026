@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="40D7BB90-CCF2-07FF-FA78-0EF8F0618C23" name="detalle_venta">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 07:02:47 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="cantidad" directorySegmentName="seg_0" id="52048FD6-3524-42DD-BFAE-993A4C9224AA">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="precio_unitario" directorySegmentName="seg_0" id="6D82250E-AB6D-4C3F-BBB5-08E73B6DE0B2">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="subtotal" directorySegmentName="seg_0" id="0CABE955-7FEE-49B1-853B-2A043FB565F4">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+</attributes>
+</Entity>

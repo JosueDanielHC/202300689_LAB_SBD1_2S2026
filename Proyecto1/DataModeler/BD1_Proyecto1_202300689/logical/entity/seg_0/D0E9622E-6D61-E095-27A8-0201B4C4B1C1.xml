@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0E9622E-6D61-E095-27A8-0201B4C4B1C1" name="tipo_identificacion">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 06:57:31 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="id_tipo_identificacion" directorySegmentName="seg_0" id="9470B445-54A7-49C7-BEFC-4E6DCBB9123C">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="nombre_tipo_identificacion" directorySegmentName="seg_0" id="14F91F72-7F22-4F99-B424-A59079EA94E7">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" name="tipo_identificacion PUID" directorySegmentName="seg_0" id="CC2591E3-A98F-4D69-9953-C970B4469035">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9470B445-54A7-49C7-BEFC-4E6DCBB9123C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9E2CDD60-5C48-6BB3-C29E-7980A8E2948F" name="tienda">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 07:01:54 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="id_tienda" directorySegmentName="seg_0" id="473D94CC-5516-4548-9013-BA32F514688A">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="nombre_tienda" directorySegmentName="seg_0" id="C1BEE6F8-EF76-43D6-B63D-854E870686DB">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="direccion" directorySegmentName="seg_0" id="297B9C47-7140-4747-8D12-F711E56B2E1E">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="telefono" directorySegmentName="seg_0" id="1D342F71-40DD-4854-ACCB-1616C5F81C35">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" name="tienda PUID" directorySegmentName="seg_0" id="DA69A24A-B38B-45AF-9C2A-58795CCD06DF">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>473D94CC-5516-4548-9013-BA32F514688A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

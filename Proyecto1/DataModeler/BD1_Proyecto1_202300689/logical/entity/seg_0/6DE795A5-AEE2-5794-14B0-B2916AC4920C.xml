@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6DE795A5-AEE2-5794-14B0-B2916AC4920C" name="empleado">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 07:01:59 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="id_empleado" directorySegmentName="seg_0" id="AA5B4DA9-FCCB-4F45-9C4D-0397262ED936">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="fecha_contratacion" directorySegmentName="seg_0" id="A49B1B16-F78D-45CC-9CAB-DB5C6A72AE98">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<nullsAllowed>false</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" name="empleado PUID" directorySegmentName="seg_0" id="0178B85E-8953-452D-8C2A-FC46395EFEAC">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 08:10:00 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AA5B4DA9-FCCB-4F45-9C4D-0397262ED936</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

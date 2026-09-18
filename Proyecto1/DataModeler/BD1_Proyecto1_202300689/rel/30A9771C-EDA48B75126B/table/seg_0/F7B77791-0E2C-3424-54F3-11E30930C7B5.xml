@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7B77791-0E2C-3424-54F3-11E30930C7B5" name="producto">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>6F68CA88-1C7E-CC3B-697A-2AF8FBCE5AC3</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_producto" id="EC542179-2BCE-06DA-C714-739E404252A9">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>C1D65DEC-71DC-4B30-8CD0-D90B95F1BB15</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_producto" id="C79A9CEA-865F-6870-1A7B-A6E60A6811FC">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>F3F4F1D4-0235-4A28-AA4E-6FBFA73EEAF4</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="684BFE3C-3A57-E832-1A28-784DC3F0A733">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>9A1B4219-A543-4168-BA4F-DE1B276EA84F</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_categoria" id="0098BE07-685D-C7F6-F2A0-EC4ECC1DD6F4">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>31CAD74A-B50D-31D2-F38A-2A7952DF0C8B</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF8A6331-0888-670B-7837-82A904A158F5" referredColumn="55F23A0E-7BFC-FB71-F6E9-D18318983800"/>
+</associations>
+</Column>
+<Column name="id_marca" id="EFEB0ACD-C2A5-E901-80A9-87C65E2E0641">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>21EC4CFC-6DDE-DE51-E1EC-CFF67513D4B4</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3D09F72-677F-9925-6EC2-F8E6A2D2B876" referredColumn="BABF8C17-6E8E-16BB-12A0-F728335AA6C3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D13F4CDF-E8E7-CC97-997C-24988C0A0B13" name="producto_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>F52D6448-389A-4765-AF4A-D37364504AA5</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC542179-2BCE-06DA-C714-739E404252A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D33D95D4-2BAB-55D9-2A8E-D6F2FDE476EB" name="producto_categoria_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>7165CD84-1B67-5DF3-57B7-7181943F9396</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0098BE07-685D-C7F6-F2A0-EC4ECC1DD6F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3DE7DF4B-1598-2176-65BE-2207E608DAB5" name="producto_marca_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>EF50EDCE-F1EE-392A-D003-C0452F1F2668</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFEB0ACD-C2A5-E901-80A9-87C65E2E0641"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

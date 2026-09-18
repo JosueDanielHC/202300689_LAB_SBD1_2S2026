@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="municipio_persona" directorySegmentName="seg_0" id="D2F7B4DE-B92F-AE5A-7E3A-AABCA909C1BC">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 07:04:41 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0570CE3A-7261-58C7-E8A8-0EB115C50241</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>65673B79-FE93-2076-AF38-8DF056539219</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

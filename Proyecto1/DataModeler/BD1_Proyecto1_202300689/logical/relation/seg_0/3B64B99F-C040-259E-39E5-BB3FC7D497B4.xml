@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pais_departamento" directorySegmentName="seg_0" id="3B64B99F-C040-259E-39E5-BB3FC7D497B4">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 06:51:18 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>13BF88E1-9A85-A8EB-A1ED-17D4F99D6B7C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>43362BFA-D097-1505-3773-6BB661CF5C89</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

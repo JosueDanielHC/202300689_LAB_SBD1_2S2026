@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tipo_tienda_tienda" directorySegmentName="seg_0" id="05A73317-65C6-4FEF-E5C5-848F18864B4F">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 07:04:29 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FEF1D0A5-BCFE-797F-7043-786FA3134BDA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9E2CDD60-5C48-6BB3-C29E-7980A8E2948F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

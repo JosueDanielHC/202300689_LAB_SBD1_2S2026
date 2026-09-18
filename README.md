@@ -5,7 +5,7 @@ Universidad de San Carlos de Guatemala
 
 | Dato | Valor |
 |---|---|
-| **Estudiante** | Josue Daniel Herrera Cottom |
+| **Estudiante** | Josue Daniel Herrera Cotton |
 | **Carné** | 202300689 |
 | **Curso** | Bases de Datos 1 (SBD1) |
 
@@ -21,6 +21,12 @@ Importación del dataset, consultas DQL avanzadas y manual de procedimiento.
 
 Entrega: `[BD1]_Practica2_202300689.zip`
 
+### `Proyecto1/`
+Proyecto comercial La Estrella: diccionario de datos, manual técnico (modelos y evidencias), DDL, DML, consultas 1–8 y modelo Oracle SQL Data Modeler.
+
+Entrega: `[BD1]_Proyecto1_202300689.zip`
+
 ## Herramientas
 - Oracle Database 21c XE
 - Oracle SQL Developer
+- Oracle SQL Developer Data Modeler

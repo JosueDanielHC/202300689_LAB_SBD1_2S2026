@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D70972FF-0BFA-95C5-FFD1-55025C619948" name="empleado">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>6DE795A5-AEE2-5794-14B0-B2916AC4920C</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_empleado" id="CF38F136-7BA9-AD92-6397-62A582E91CB5">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>AA5B4DA9-FCCB-4F45-9C4D-0397262ED936</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_contratacion" id="998F8CB9-2C6C-DB2D-BAF7-B347D71419A7">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>A49B1B16-F78D-45CC-9CAB-DB5C6A72AE98</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tienda" id="7587EA4F-4D4D-3F67-49B2-8DC5AC330114">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>9756E8D8-1AD3-192C-396C-5265B1D1B529</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83460745-DC09-3670-7482-75D03BF44FAB" referredColumn="008F8B24-E4F9-7C5D-F27A-4D1EF5F5B8A9"/>
+</associations>
+</Column>
+<Column name="id_persona" id="AA13A4D9-AD1D-695A-64CC-BA5F81B5D863">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>95127882-7970-FA91-DC71-68B7FFC98761</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3FFA4FC-F82E-5737-42AE-5145B89A0251" referredColumn="BAE85FD3-1E29-5895-3C30-156BF8C0773D"/>
+</associations>
+</Column>
+<Column name="id_cargo" id="E9CDDED4-F3EE-A901-F35C-69DA922FA39D">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>272286CE-DDAA-6D83-533A-B1C2FF0F6A96</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4E2FC613-6CEC-5911-885D-615AB3E8CEC5" referredColumn="A34D98E4-DFEE-6B3F-2FFB-AF5A2244D76F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DE68BBBD-D778-D25F-136E-2359429C9593" name="empleado_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>0178B85E-8953-452D-8C2A-FC46395EFEAC</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF38F136-7BA9-AD92-6397-62A582E91CB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2FAEC24-0CB3-294A-332E-AE4D9B31C182" name="uk_emp_persona">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>6AB7DD25-2A22-7462-419D-813267AE1B7B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="AA13A4D9-AD1D-695A-64CC-BA5F81B5D863"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A773040D-2D29-DECE-3810-1E9DFF012268" name="empleado_cargo_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>EED0D895-368E-29BE-6119-0179427861D7</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9CDDED4-F3EE-A901-F35C-69DA922FA39D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2EFC90E-7495-BA38-90BD-47E82675E24E" name="empleado_persona_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>6AB7DD25-2A22-7462-419D-813267AE1B7B</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA13A4D9-AD1D-695A-64CC-BA5F81B5D863"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB52643F-D3AB-7E94-DD96-DEBFF4F43C00" name="empleado_tienda_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>041EC876-D1FD-6DA7-30A8-862F717A61FF</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7587EA4F-4D4D-3F67-49B2-8DC5AC330114"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

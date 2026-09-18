@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="producto_catalogo_producto" directorySegmentName="seg_0" id="A6BDF5B8-87B4-E896-6A7A-5815CF99BD93">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 07:16:57 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6F68CA88-1C7E-CC3B-697A-2AF8FBCE5AC3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9ACCA97F-3A06-274F-4153-25D78DB4C8A2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

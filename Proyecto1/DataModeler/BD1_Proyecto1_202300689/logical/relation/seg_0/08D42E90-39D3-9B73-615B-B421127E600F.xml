@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="producto_detalle_venta" directorySegmentName="seg_0" id="08D42E90-39D3-9B73-615B-B421127E600F">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 07:18:47 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6F68CA88-1C7E-CC3B-697A-2AF8FBCE5AC3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>40D7BB90-CCF2-07FF-FA78-0EF8F0618C23</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

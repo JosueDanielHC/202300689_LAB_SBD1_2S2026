@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BD1_Proyecto1_202300689" id="E8C115D1-B93E-016D-E77C-C77B0F0BD51A" version="3.5">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 05:59:53 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>E8C115D1-B93E-016D-E77C-C77B0F0BD51A</designId>
+</OSDM_Design>

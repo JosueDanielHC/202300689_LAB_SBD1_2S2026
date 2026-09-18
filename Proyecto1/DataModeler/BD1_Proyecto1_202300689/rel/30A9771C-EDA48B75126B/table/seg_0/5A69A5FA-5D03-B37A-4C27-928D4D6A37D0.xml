@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A69A5FA-5D03-B37A-4C27-928D4D6A37D0" name="venta">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>0A427A25-CF21-9CEA-A1B0-7B3CB2208450</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_venta" id="43A63069-7360-914B-E9D5-1A94F305A7FF">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>22D58D52-96EC-4562-9174-DABFF536CFCA</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_venta" id="3C323FBC-28A8-2D19-BB5B-8F2347E8ACFE">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>6CB26EB1-E14F-4560-8693-C79CBFD9C484</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tienda" id="C965051C-DF91-E250-0753-E13DEC020710">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>91766BBA-7640-B1FC-C314-30CF823C89AD</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2234B4FD-5BD7-182D-4C33-D5E50F97258D" referredColumn="008F8B24-E4F9-7C5D-F27A-4D1EF5F5B8A9"/>
+</associations>
+</Column>
+<Column name="id_estado_venta" id="7023B585-2056-BEA9-5986-92F38FB18AE9">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>4ED89F4B-ECC5-04FA-4D78-474B49FEE4AE</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A2C55F5-DB6D-4708-B8D3-6592FDEB5EEA" referredColumn="F2FB27E7-89AD-4BEA-2FC2-E8BE3CE63A3F"/>
+</associations>
+</Column>
+<Column name="id_empleado" id="46CA3DAE-EADD-9183-B0EA-1C302FBEC61D">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>F758599E-511B-36FE-8A85-BACA0C87F44F</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C5C2BCCB-9D79-2F30-6097-70986FD14B5E" referredColumn="CF38F136-7BA9-AD92-6397-62A582E91CB5"/>
+</associations>
+</Column>
+<Column name="id_cliente" id="DF6B9F8A-41F4-6826-0F3B-FECA1A0C081A">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>DD954D3F-CA56-F885-5D2A-1F11D0BA7480</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8066F7CB-EB3E-2C1E-D0F3-B53836B0C5C1" referredColumn="430A692A-DCF1-DE3D-570A-D857D3366E9A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1BF2B4FE-7160-86C6-75BE-843661F8652D" name="venta_PK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>92A0C09B-704F-475E-B2FD-74D6C60629EF</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43A63069-7360-914B-E9D5-1A94F305A7FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3FAC605-06E6-3BBB-8A57-AE18B73D5E27" name="venta_cliente_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>C5BDE373-FA13-34FB-FF9D-0DAE300F3E69</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF6B9F8A-41F4-6826-0F3B-FECA1A0C081A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2A25DDA-8714-A9BC-764D-26958701AA14" name="venta_empleado_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>744A660A-F910-34B3-D549-7539473EF591</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46CA3DAE-EADD-9183-B0EA-1C302FBEC61D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E94F93A-E81E-F211-7D8F-32BD82997DA9" name="venta_estado_venta_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>5FB3D048-7ED2-268A-2374-4F7AFCCC13BA</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7023B585-2056-BEA9-5986-92F38FB18AE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A09545E7-02ED-DDDD-20EA-6D7DAE1914F6" name="venta_tienda_FK">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-12 05:25:22 UTC</createdTime>
+<generatorID>34C89CF4-DF09-AE91-774B-D0D42B526C55</generatorID>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C965051C-DF91-E250-0753-E13DEC020710"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

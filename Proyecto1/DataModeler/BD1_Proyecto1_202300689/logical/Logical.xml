@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="D9B1A9B1-AA71-C6D2-852D-B828A258853F" mainViewID="0B4EAE0D-3F69-689C-CA95-8C96EFBC420F">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 05:59:53 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

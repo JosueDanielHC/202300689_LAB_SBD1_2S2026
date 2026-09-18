@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="venta_pago" directorySegmentName="seg_0" id="21E54B35-41F7-707E-9428-8F9BEF03E2D3">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 07:18:59 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0A427A25-CF21-9CEA-A1B0-7B3CB2208450</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7753776A-F366-BBB3-1B6F-C693FF50E1C4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

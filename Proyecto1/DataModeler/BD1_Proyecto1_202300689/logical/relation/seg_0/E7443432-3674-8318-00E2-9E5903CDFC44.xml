@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="metodo_pago_pago" directorySegmentName="seg_0" id="E7443432-3674-8318-00E2-9E5903CDFC44">
+<createdBy>CompuFire</createdBy>
+<createdTime>2026-09-11 07:19:11 UTC</createdTime>
+<ownerDesignName>BD1_Proyecto1_202300689</ownerDesignName>
+<engineerTo>
+<item key="30A9771C-F03D-622F-CB69-EDA48B75126B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>79142C39-9C86-1C16-19C0-3B70F1BA43C2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7753776A-F366-BBB3-1B6F-C693FF50E1C4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
