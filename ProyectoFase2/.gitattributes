@@ -1,0 +1,4 @@
+*.sh text eol=lf
+docker-compose.yml text eol=lf
+init.sql text eol=lf
+*.sql text eol=lf

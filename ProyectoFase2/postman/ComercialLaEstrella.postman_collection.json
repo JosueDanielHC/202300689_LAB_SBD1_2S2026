@@ -1,0 +1,1063 @@
+{
+  "info": {
+    "name": "Comercial La Estrella Fase 2",
+    "description": "CRUD, vistas y pruebas de triggers. Josue Daniel Herrera Cottom, 202300689. Ejecutar la carpeta Prueba de triggers en orden, de arriba hacia abajo.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    },
+    {
+      "key": "id_venta",
+      "value": ""
+    },
+    {
+      "key": "id_cliente",
+      "value": ""
+    },
+    {
+      "key": "id_tienda",
+      "value": ""
+    },
+    {
+      "key": "id_empleado",
+      "value": ""
+    },
+    {
+      "key": "id_producto",
+      "value": ""
+    },
+    {
+      "key": "id_pago",
+      "value": ""
+    },
+    {
+      "key": "id_pago_2",
+      "value": ""
+    },
+    {
+      "key": "existencia_antes",
+      "value": ""
+    },
+    {
+      "key": "id_persona",
+      "value": ""
+    },
+    {
+      "key": "id_pago_crud",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Salud y reportes",
+      "item": [
+        {
+          "name": "Health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/health"
+          }
+        },
+        {
+          "name": "Vista ventas por ubicacion",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/reportes/ventas-ubicacion"
+          }
+        },
+        {
+          "name": "Vista top productos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/reportes/top-productos"
+          }
+        },
+        {
+          "name": "Vista saldos pendientes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/reportes/saldos-pendientes"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Catalogos",
+      "item": [
+        {
+          "name": "Paises",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/paises"
+          }
+        },
+        {
+          "name": "Departamentos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/departamentos"
+          }
+        },
+        {
+          "name": "Municipios",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/municipios"
+          }
+        },
+        {
+          "name": "Tipos de tienda",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/tipos-tienda"
+          }
+        },
+        {
+          "name": "Tipos de identificacion",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/tipos-identificacion"
+          }
+        },
+        {
+          "name": "Cargos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/cargos"
+          }
+        },
+        {
+          "name": "Categorias",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/categorias"
+          }
+        },
+        {
+          "name": "Marcas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/marcas"
+          }
+        },
+        {
+          "name": "Estados de venta",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/estados-venta"
+          }
+        },
+        {
+          "name": "Metodos de pago",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/metodos-pago"
+          }
+        },
+        {
+          "name": "Personas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/personas"
+          }
+        },
+        {
+          "name": "Catalogo de la tienda 6 y producto 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/catalogo/6/1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Clientes",
+      "item": [
+        {
+          "name": "Listar clientes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/clientes"
+          }
+        },
+        {
+          "name": "Obtener clientes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/clientes/1"
+          }
+        },
+        {
+          "name": "Crear clientes",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/clientes",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombres\": \"Josue\",\n  \"apellidos\": \"Herrera\",\n  \"telefono\": \"55554444\",\n  \"correo\": \"josue.prueba@correo.com\",\n  \"direccion\": \"1 Calle 1-11 zona 1\",\n  \"id_municipio\": 1,\n  \"id_tipo_identificacion\": 1,\n  \"numero_identificacion\": \"PRUEBA202300689\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const body = pm.response.json();",
+                  "if (body.id_cliente) pm.collectionVariables.set('id_cliente', String(body.id_cliente));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Actualizar clientes",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/clientes/{{id_cliente}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombres\": \"Josue\",\n  \"apellidos\": \"Herrera Cottom\",\n  \"telefono\": \"55554445\",\n  \"correo\": \"josue.prueba@correo.com\",\n  \"direccion\": \"2 Calle 2-22 zona 1\",\n  \"id_municipio\": 1,\n  \"id_tipo_identificacion\": 1,\n  \"numero_identificacion\": \"PRUEBA202300689\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar clientes",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/clientes/{{id_cliente}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tiendas",
+      "item": [
+        {
+          "name": "Listar tiendas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/tiendas"
+          }
+        },
+        {
+          "name": "Obtener tiendas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/tiendas/1"
+          }
+        },
+        {
+          "name": "Crear tiendas",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/tiendas",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_tienda\": \"Comercial La Estrella Prueba\",\n  \"direccion\": \"1 Avenida 1-11 zona 1\",\n  \"telefono\": \"22223333\",\n  \"id_municipio\": 1,\n  \"id_tipo_tienda\": 1\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const body = pm.response.json();",
+                  "if (body.id_tienda) pm.collectionVariables.set('id_tienda', String(body.id_tienda));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Actualizar tiendas",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/tiendas/{{id_tienda}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_tienda\": \"Comercial La Estrella Prueba Actualizada\",\n  \"direccion\": \"1 Avenida 1-11 zona 1\",\n  \"telefono\": \"22224444\",\n  \"id_municipio\": 1,\n  \"id_tipo_tienda\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar tiendas",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/tiendas/{{id_tienda}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Empleados",
+      "item": [
+        {
+          "name": "Listar empleados",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/empleados"
+          }
+        },
+        {
+          "name": "Obtener empleados",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/empleados/1"
+          }
+        },
+        {
+          "name": "Crear empleados",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/empleados",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombres\": \"Ana\",\n  \"apellidos\": \"Prueba\",\n  \"telefono\": \"44445555\",\n  \"correo\": \"ana.prueba@correo.com\",\n  \"direccion\": \"3 Calle 3-33 zona 1\",\n  \"id_municipio\": 1,\n  \"fecha_contratacion\": \"2026-10-07\",\n  \"id_tienda\": 1,\n  \"id_cargo\": 1\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const body = pm.response.json();",
+                  "if (body.id_empleado) pm.collectionVariables.set('id_empleado', String(body.id_empleado));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Actualizar empleados",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/empleados/{{id_empleado}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombres\": \"Ana\",\n  \"apellidos\": \"Prueba Actualizada\",\n  \"telefono\": \"44445556\",\n  \"correo\": \"ana.prueba@correo.com\",\n  \"direccion\": \"3 Calle 3-33 zona 1\",\n  \"id_municipio\": 1,\n  \"fecha_contratacion\": \"2026-10-07\",\n  \"id_tienda\": 1,\n  \"id_cargo\": 2\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar empleados",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/empleados/{{id_empleado}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Productos",
+      "item": [
+        {
+          "name": "Listar productos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/productos"
+          }
+        },
+        {
+          "name": "Obtener productos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/productos/1"
+          }
+        },
+        {
+          "name": "Crear productos",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/productos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_producto\": \"Producto prueba\",\n  \"descripcion\": \"Producto creado desde la API\",\n  \"id_categoria\": 1,\n  \"id_marca\": 1\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const body = pm.response.json();",
+                  "if (body.id_producto) pm.collectionVariables.set('id_producto', String(body.id_producto));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Actualizar productos",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/productos/{{id_producto}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_producto\": \"Producto prueba actualizado\",\n  \"descripcion\": \"Descripcion actualizada desde la API\",\n  \"id_categoria\": 1,\n  \"id_marca\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar productos",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/productos/{{id_producto}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ventas pagos y detalles",
+      "item": [
+        {
+          "name": "Listar ventas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/ventas"
+          }
+        },
+        {
+          "name": "Obtener venta 12",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/ventas/12"
+          }
+        },
+        {
+          "name": "Listar pagos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/pagos"
+          }
+        },
+        {
+          "name": "Listar detalles",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/detalles-venta"
+          }
+        },
+        {
+          "name": "Detalles de una venta",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/detalles-venta?id_venta={{id_venta}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Prueba de triggers",
+      "description": "Ejecutar en este orden. El paso 1 guarda la existencia actual y el paso 5 comprueba que bajo 1.",
+      "item": [
+        {
+          "name": "1. Ver existencia antes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/catalogo/6/1"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.collectionVariables.set('existencia_antes', String(pm.response.json().existencia_actual));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "2. Crear venta registrada",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/ventas",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fecha_venta\": \"2026-10-07\",\n  \"id_tienda\": 6,\n  \"id_empleado\": 22,\n  \"id_cliente\": 224\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('venta creada', function () { pm.response.to.have.status(201); });",
+                  "const body = pm.response.json();",
+                  "pm.collectionVariables.set('id_venta', String(body.id_venta));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "3. Stock insuficiente",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/detalles-venta",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id_venta\": {{id_venta}},\n  \"id_producto\": 1,\n  \"cantidad\": 9999,\n  \"precio_unitario\": 10\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('rechaza stock', function () {",
+                  "  pm.response.to.have.status(400);",
+                  "  pm.expect(pm.response.json().error).to.eql('Stock insuficiente');",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "4. Venta con stock valido",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/detalles-venta",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id_venta\": {{id_venta}},\n  \"id_producto\": 1,\n  \"cantidad\": 1,\n  \"precio_unitario\": 10\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('detalle creado', function () { pm.response.to.have.status(201); });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "5. Existencia descontada",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/catalogo/6/1"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('stock bajo', function () {",
+                  "  const antes = Number(pm.collectionVariables.get('existencia_antes'));",
+                  "  pm.expect(pm.response.json().existencia_actual).to.eql(antes - 1);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "6. Abono parcial",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/pagos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"monto\": 4,\n  \"id_metodo_pago\": 1,\n  \"id_venta\": {{id_venta}}\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('abono creado', function () { pm.response.to.have.status(201); });",
+                  "pm.collectionVariables.set('id_pago', String(pm.response.json().id_pago));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "7. Sigue registrada",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/ventas/{{id_venta}}"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('registrada', function () {",
+                  "  pm.expect(pm.response.json().nombre_estado_venta).to.eql('REGISTRADA');",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "8. Abono que cubre el total",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/pagos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"monto\": 6,\n  \"id_metodo_pago\": 1,\n  \"id_venta\": {{id_venta}}\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('segundo abono', function () { pm.response.to.have.status(201); });",
+                  "pm.collectionVariables.set('id_pago_2', String(pm.response.json().id_pago));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "9. Estado PAGADA",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/ventas/{{id_venta}}"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('pagada', function () {",
+                  "  pm.expect(pm.response.json().nombre_estado_venta).to.eql('PAGADA');",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CRUD de ventas, pagos, detalles, personas y catalogo",
+      "description": "Ejecutar de arriba hacia abajo. La oferta de catalogo usa el producto creado en la carpeta Productos, asi que esa carpeta debe correr antes. Crear un detalle descuenta inventario; eliminarlo no lo devuelve.",
+      "item": [
+        {
+          "name": "Crear persona",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/personas",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombres\": \"Persona\",\n  \"apellidos\": \"Prueba\",\n  \"telefono\": \"12345678\",\n  \"correo\": \"persona.prueba@correo.com\",\n  \"direccion\": \"4 Calle 4-44 zona 1\",\n  \"id_municipio\": 1\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_persona) pm.collectionVariables.set('id_persona', String(pm.response.json().id_persona));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener persona creada",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/personas/{{id_persona}}"
+          }
+        },
+        {
+          "name": "Actualizar persona creada",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/personas/{{id_persona}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombres\": \"Persona\",\n  \"apellidos\": \"Actualizada\",\n  \"telefono\": \"12345679\",\n  \"correo\": \"persona.prueba@correo.com\",\n  \"direccion\": \"4 Calle 4-44 zona 1\",\n  \"id_municipio\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar persona creada",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/personas/{{id_persona}}"
+          }
+        },
+        {
+          "name": "Crear venta",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/ventas",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fecha_venta\": \"2026-10-07\",\n  \"id_tienda\": 1,\n  \"id_empleado\": 1,\n  \"id_cliente\": 1\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_venta) pm.collectionVariables.set('id_venta', String(pm.response.json().id_venta));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener venta creada",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/ventas/{{id_venta}}"
+          }
+        },
+        {
+          "name": "Actualizar venta creada",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/ventas/{{id_venta}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fecha_venta\": \"2026-10-08\",\n  \"id_tienda\": 1,\n  \"id_empleado\": 1,\n  \"id_cliente\": 1,\n  \"id_estado_venta\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Crear detalle",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/detalles-venta",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id_venta\": {{id_venta}},\n  \"id_producto\": 1,\n  \"cantidad\": 1,\n  \"precio_unitario\": 10\n}"
+            }
+          }
+        },
+        {
+          "name": "Obtener detalle",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/detalles-venta/{{id_venta}}/1"
+          }
+        },
+        {
+          "name": "Actualizar detalle",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/detalles-venta/{{id_venta}}/1",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cantidad\": 1,\n  \"precio_unitario\": 12\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar detalle",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/detalles-venta/{{id_venta}}/1"
+          }
+        },
+        {
+          "name": "Crear pago",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/pagos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"monto\": 1,\n  \"id_metodo_pago\": 1,\n  \"id_venta\": {{id_venta}}\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_pago) pm.collectionVariables.set('id_pago_crud', String(pm.response.json().id_pago));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener pago",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/pagos/{{id_pago_crud}}"
+          }
+        },
+        {
+          "name": "Actualizar pago",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/pagos/{{id_pago_crud}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"monto\": 2,\n  \"id_metodo_pago\": 1,\n  \"id_venta\": {{id_venta}}\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar pago",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/pagos/{{id_pago_crud}}"
+          }
+        },
+        {
+          "name": "Eliminar venta creada",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/ventas/{{id_venta}}"
+          }
+        },
+        {
+          "name": "Crear oferta de catalogo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/catalogo",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id_tienda\": 1,\n  \"id_producto\": {{id_producto}},\n  \"precio_vigente\": 15.5,\n  \"existencia_actual\": 3\n}"
+            }
+          }
+        },
+        {
+          "name": "Obtener oferta de catalogo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/catalogo/1/{{id_producto}}"
+          }
+        },
+        {
+          "name": "Actualizar oferta de catalogo",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/catalogo/1/{{id_producto}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"precio_vigente\": 16,\n  \"existencia_actual\": 3\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar oferta de catalogo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/catalogo/1/{{id_producto}}"
+          }
+        }
+      ]
+    }
+  ]
+}

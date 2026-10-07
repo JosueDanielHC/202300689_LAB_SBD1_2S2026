@@ -1,0 +1,45 @@
+# Fase 2 — Comercial La Estrella
+# Josue Daniel Herrera Cottom — 202300689
+# SQL Server 2022 en Docker. La imagen oficial no ejecuta scripts al arrancar;
+# el servicio db-init aplica init.sql una sola vez, cuando la base aun no existe.
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: estrella-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "LaEstrella#2026"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+    volumes:
+      - estrella_sqldata:/var/opt/mssql
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P \"$$MSSQL_SA_PASSWORD\" -C -Q \"SELECT 1\" || exit 1",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 40s
+
+  db-init:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: estrella-db-init
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    environment:
+      SQL_SERVER: sqlserver
+      SA_PASSWORD: "LaEstrella#2026"
+    volumes:
+      - ./init.sql:/scripts/init.sql:ro
+      - ./docker/init-db.sh:/scripts/init-db.sh:ro
+    entrypoint: ["/bin/bash", "/scripts/init-db.sh"]
+    restart: "no"
+
+volumes:
+  estrella_sqldata:
