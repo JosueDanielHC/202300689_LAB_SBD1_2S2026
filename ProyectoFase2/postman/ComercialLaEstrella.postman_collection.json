@@ -48,6 +48,46 @@
     {
       "key": "id_pago_crud",
       "value": ""
+    },
+    {
+      "key": "id_pais",
+      "value": ""
+    },
+    {
+      "key": "id_departamento",
+      "value": ""
+    },
+    {
+      "key": "id_municipio",
+      "value": ""
+    },
+    {
+      "key": "id_tipo_tienda",
+      "value": ""
+    },
+    {
+      "key": "id_tipo_identificacion",
+      "value": ""
+    },
+    {
+      "key": "id_cargo",
+      "value": ""
+    },
+    {
+      "key": "id_categoria",
+      "value": ""
+    },
+    {
+      "key": "id_marca",
+      "value": ""
+    },
+    {
+      "key": "id_estado_venta",
+      "value": ""
+    },
+    {
+      "key": "id_metodo_pago",
+      "value": ""
     }
   ],
   "item": [
@@ -1055,6 +1095,622 @@
             "method": "DELETE",
             "header": [],
             "url": "{{baseUrl}}/api/catalogo/1/{{id_producto}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CRUD de catalogos",
+      "description": "Crear, consultar, actualizar y eliminar un registro nuevo de cada catalogo. No usar los ids 1, 2 o 3 del dataset.",
+      "item": [
+        {
+          "name": "Crear pais",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/paises",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_pais\": \"Pais Prueba\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_pais) pm.collectionVariables.set('id_pais', String(pm.response.json().id_pais));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener pais",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/paises/{{id_pais}}"
+          }
+        },
+        {
+          "name": "Actualizar pais",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/paises/{{id_pais}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_pais\": \"Pais Prueba Editado\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar pais",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/paises/{{id_pais}}"
+          }
+        },
+        {
+          "name": "Crear departamento",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/departamentos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_departamento\": \"Departamento Prueba\",\n  \"id_pais\": 1\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_departamento) pm.collectionVariables.set('id_departamento', String(pm.response.json().id_departamento));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener departamento",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/departamentos/{{id_departamento}}"
+          }
+        },
+        {
+          "name": "Actualizar departamento",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/departamentos/{{id_departamento}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_departamento\": \"Departamento Prueba Editado\",\n  \"id_pais\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar departamento",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/departamentos/{{id_departamento}}"
+          }
+        },
+        {
+          "name": "Crear municipio",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/municipios",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_municipio\": \"Municipio Prueba\",\n  \"id_departamento\": 1\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_municipio) pm.collectionVariables.set('id_municipio', String(pm.response.json().id_municipio));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener municipio",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/municipios/{{id_municipio}}"
+          }
+        },
+        {
+          "name": "Actualizar municipio",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/municipios/{{id_municipio}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_municipio\": \"Municipio Prueba Editado\",\n  \"id_departamento\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar municipio",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/municipios/{{id_municipio}}"
+          }
+        },
+        {
+          "name": "Crear tipo de tienda",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/tipos-tienda",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_tipo_tienda\": \"Tipo Prueba\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_tipo_tienda) pm.collectionVariables.set('id_tipo_tienda', String(pm.response.json().id_tipo_tienda));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener tipo de tienda",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/tipos-tienda/{{id_tipo_tienda}}"
+          }
+        },
+        {
+          "name": "Actualizar tipo de tienda",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/tipos-tienda/{{id_tipo_tienda}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_tipo_tienda\": \"Tipo Prueba Editado\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar tipo de tienda",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/tipos-tienda/{{id_tipo_tienda}}"
+          }
+        },
+        {
+          "name": "Crear tipo de identificacion",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/tipos-identificacion",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_tipo_identificacion\": \"Doc Prueba\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_tipo_identificacion) pm.collectionVariables.set('id_tipo_identificacion', String(pm.response.json().id_tipo_identificacion));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener tipo de identificacion",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/tipos-identificacion/{{id_tipo_identificacion}}"
+          }
+        },
+        {
+          "name": "Actualizar tipo de identificacion",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/tipos-identificacion/{{id_tipo_identificacion}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_tipo_identificacion\": \"Doc Prueba Editado\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar tipo de identificacion",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/tipos-identificacion/{{id_tipo_identificacion}}"
+          }
+        },
+        {
+          "name": "Crear cargo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/cargos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_cargo\": \"Cargo Prueba\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_cargo) pm.collectionVariables.set('id_cargo', String(pm.response.json().id_cargo));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener cargo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/cargos/{{id_cargo}}"
+          }
+        },
+        {
+          "name": "Actualizar cargo",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/cargos/{{id_cargo}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_cargo\": \"Cargo Prueba Editado\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar cargo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/cargos/{{id_cargo}}"
+          }
+        },
+        {
+          "name": "Crear categoria",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/categorias",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_categoria\": \"Categoria Prueba\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_categoria) pm.collectionVariables.set('id_categoria', String(pm.response.json().id_categoria));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener categoria",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/categorias/{{id_categoria}}"
+          }
+        },
+        {
+          "name": "Actualizar categoria",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/categorias/{{id_categoria}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_categoria\": \"Categoria Prueba Editada\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar categoria",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/categorias/{{id_categoria}}"
+          }
+        },
+        {
+          "name": "Crear marca",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/marcas",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_marca\": \"Marca Prueba\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_marca) pm.collectionVariables.set('id_marca', String(pm.response.json().id_marca));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener marca",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/marcas/{{id_marca}}"
+          }
+        },
+        {
+          "name": "Actualizar marca",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/marcas/{{id_marca}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_marca\": \"Marca Prueba Editada\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar marca",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/marcas/{{id_marca}}"
+          }
+        },
+        {
+          "name": "Crear estado de venta",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/estados-venta",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_estado_venta\": \"ESTADO_PRUEBA\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_estado_venta) pm.collectionVariables.set('id_estado_venta', String(pm.response.json().id_estado_venta));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener estado de venta",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/estados-venta/{{id_estado_venta}}"
+          }
+        },
+        {
+          "name": "Actualizar estado de venta",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/estados-venta/{{id_estado_venta}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_estado_venta\": \"ESTADO_EDITADO\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar estado de venta",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/estados-venta/{{id_estado_venta}}"
+          }
+        },
+        {
+          "name": "Crear metodo de pago",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/metodos-pago",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_metodo_pago\": \"Metodo Prueba\"\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.json().id_metodo_pago) pm.collectionVariables.set('id_metodo_pago', String(pm.response.json().id_metodo_pago));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Obtener metodo de pago",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/metodos-pago/{{id_metodo_pago}}"
+          }
+        },
+        {
+          "name": "Actualizar metodo de pago",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/metodos-pago/{{id_metodo_pago}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_metodo_pago\": \"Metodo Prueba Editado\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar metodo de pago",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/metodos-pago/{{id_metodo_pago}}"
           }
         }
       ]
